@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixelar't | Jasa Skripsi & IT Solutions Modern</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            colors: {
+              pixel: {
+                dark: "#0B0F19",
+                card: "#151C2C",
+                primary: "#6366F1", // Indigo
+                secondary: "#A855F7", // Purple
+                accent: "#06B6D4", // Cyan
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        background-color: #0b0f19;
+        color: #f8fafc;
+      }
+
+      .text-gradient {
+        background: linear-gradient(to right, #6366f1, #a855f7, #06b6d4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .bg-gradient-custom {
+        background: linear-gradient(
+          135deg,
+          rgba(99, 102, 241, 0.1) 0%,
+          rgba(168, 85, 247, 0.1) 100%
+        );
+      }
+
+      .glass-panel {
+        background: rgba(21, 28, 44, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .glow-hover:hover {
+        box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+
+  <body class="antialiased selection:bg-pixel-secondary selection:text-white">
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="flex items-center gap-2 group">
+          <div
+            class="w-10 h-10 rounded-xl bg-gradient-to-br from-pixel-primary to-pixel-secondary flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 transition-transform"
+          >
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <span class="font-display font-bold text-2xl tracking-tight"
+            >Pixelar<span class="text-pixel-primary">'t</span></span
+          >
+        </a>
+        <div
+          class="hidden md:flex space-x-8 text-sm font-semibold text-gray-300"
+        >
+          <a href="#layanan" class="hover:text-white transition">Layanan</a>
+          <a href="#tools" class="hover:text-white transition">Client Tools</a>
+          <a href="#portfolio" class="hover:text-white transition"
+            >Portofolio</a
+          >
+        </div>
+        <a
+          href="#kontak"
+          class="hidden md:flex bg-white text-pixel-dark px-6 py-2 rounded-full font-bold hover:bg-gray-200 transition"
+        >
+          Konsultasi Gratis
+        </a>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+      <!-- Abstract Background Orbs -->
+      <div
+        class="absolute top-20 left-10 w-72 h-72 bg-pixel-primary rounded-full mix-blend-screen filter blur-[100px] opacity-30 animate-pulse"
+      ></div>
+      <div
+        class="absolute top-40 right-10 w-72 h-72 bg-pixel-secondary rounded-full mix-blend-screen filter blur-[100px] opacity-30"
+      ></div>
+
+      <div
+        class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <div
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-pixel-accent text-sm font-bold mb-6"
+          >
+            <span class="relative flex h-3 w-3">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pixel-accent opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-3 w-3 bg-pixel-accent"
+              ></span>
+            </span>
+            Tersedia Slot Bimbingan Mei 2026
+          </div>
+          <h1
+            class="font-display text-5xl lg:text-7xl font-bold leading-tight mb-6"
+          >
+            Tuntaskan Skripsi <br />
+            Tanpa <span class="text-gradient">Frustrasi.</span>
+          </h1>
+          <p class="text-gray-400 text-lg mb-8 max-w-xl leading-relaxed">
+            Partner profesional untuk penyusunan karya ilmiah, perancangan
+            aplikasi Web/Mobile, hingga pengolahan data. Kami bantu dari
+            pemilihan judul hingga revisi terakhir.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#kontak"
+              class="bg-gradient-to-r from-pixel-primary to-pixel-secondary text-white px-8 py-4 rounded-full font-bold hover:shadow-lg hover:shadow-pixel-primary/30 transition flex items-center gap-2"
+            >
+              Hubungi Tim Kami <i class="fa-brands fa-whatsapp text-xl"></i>
+            </a>
+            <a
+              href="#tools"
+              class="glass-panel text-white px-8 py-4 rounded-full font-bold hover:bg-white/5 transition"
+            >
+              Jelajahi Fitur
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-pixel-dark via-transparent to-transparent z-10"
+          ></div>
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000"
+            alt="Coding Workspace"
+            class="rounded-2xl shadow-2xl border border-white/10 relative z-0"
+          />
+
+          <!-- Floating Badge -->
+          <div
+            class="absolute -bottom-6 -left-6 glass-panel p-4 rounded-xl z-20 flex items-center gap-4 animate-bounce"
+            style="animation-duration: 3s"
+          >
+            <div
+              class="w-12 h-12 bg-green-500/20 text-green-400 rounded-full flex items-center justify-center text-xl"
+            >
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <div>
+              <p
+                class="text-xs text-gray-400 uppercase tracking-wider font-bold"
+              >
+                Tingkat Kelulusan
+              </p>
+              <p class="font-display text-xl font-bold text-white">
+                99.8% Tepat Waktu
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT TOOLS SECTION (FITUR BERGUNA UNTUK PELANGGAN) -->
+    <section id="tools" class="py-20 bg-pixel-card/50 border-y border-white/5">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">
+            Tools Eksklusif Klien <span class="text-gradient">Pixelar't</span>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Kami tidak hanya mengerjakan, tapi memberikan transparansi dan
+            fasilitas digital lengkap untuk mempermudah progres skripsi Anda.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Tool 1 -->
+          <div
+            class="glass-panel p-6 rounded-2xl glow-hover transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-pixel-primary/20 text-pixel-primary rounded-xl flex items-center justify-center text-2xl mb-6"
+            >
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Live Progress Tracker</h3>
+            <p class="text-gray-400 text-sm">
+              Pantau sejauh mana pengerjaan bab atau coding program Anda secara
+              real-time melalui dashboard klien.
+            </p>
+          </div>
+          <!-- Tool 2 -->
+          <div
+            class="glass-panel p-6 rounded-2xl glow-hover transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-pixel-secondary/20 text-pixel-secondary rounded-xl flex items-center justify-center text-2xl mb-6"
+            >
+              <i class="fa-solid fa-file-word"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Akses Template Skripsi</h3>
+            <p class="text-gray-400 text-sm">
+              Dapatkan puluhan template Microsoft Word standar kampus yang sudah
+              diformat rapi (Margin, Daftar Isi Otomatis).
+            </p>
+          </div>
+          <!-- Tool 3 -->
+          <div
+            class="glass-panel p-6 rounded-2xl glow-hover transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-pixel-accent/20 text-pixel-accent rounded-xl flex items-center justify-center text-2xl mb-6"
+            >
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Cek Turnitin Gratis</h3>
+            <p class="text-gray-400 text-sm">
+              Setiap pengerjaan bab sudah termasuk fasilitas pengecekan plagiasi
+              dengan akun instruktur resmi.
+            </p>
+          </div>
+          <!-- Tool 4 -->
+          <div
+            class="glass-panel p-6 rounded-2xl glow-hover transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-green-500/20 text-green-400 rounded-xl flex items-center justify-center text-2xl mb-6"
+            >
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Source Code & Database</h3>
+            <p class="text-gray-400 text-sm">
+              Untuk project IT, Anda mendapat akses penuh ke repositori kode dan
+              panduan instalasi di lokal Anda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYANAN KAMI -->
+    <section id="layanan" class="py-24">
+      <div class="container mx-auto px-6">
+        <h2
+          class="font-display text-3xl md:text-5xl font-bold text-center mb-16"
+        >
+          Fokus Layanan <span class="text-gradient">Utama</span>
+        </h2>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-pixel-card rounded-3xl p-8 border border-white/5 hover:border-pixel-primary/50 transition"
+          >
+            <h3 class="text-2xl font-bold mb-4">Pembuatan Program (IT)</h3>
+            <p class="text-gray-400 mb-6 text-sm">
+              Spesialisasi kami. Pengerjaan aplikasi untuk Skripsi Teknik
+              Informatika / Sistem Informasi.
+            </p>
+            <ul class="space-y-3 mb-8 text-sm text-gray-300">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-pixel-accent"></i> Full-Stack
+                Web App (Laravel/Node.js)
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-pixel-accent"></i> Perancangan
+                Database (SQL) & CRUD
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-pixel-accent"></i> Aplikasi
+                Mobile & Sistem Pakar
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2 (Highlighted) -->
+          <div
+            class="bg-gradient-custom rounded-3xl p-8 border border-pixel-primary relative transform lg:-translate-y-4 shadow-2xl shadow-pixel-primary/20"
+          >
+            <div
+              class="absolute top-0 right-8 bg-pixel-primary text-xs font-bold px-3 py-1 rounded-b-lg uppercase tracking-wider"
+            >
+              Best Seller
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Bimbingan Bab 1 - 5</h3>
+            <p class="text-gray-400 mb-6 text-sm">
+              Pendampingan penuh dari pencarian judul, penyusunan bab demi bab,
+              hingga persiapan sidang.
+            </p>
+            <ul class="space-y-3 mb-8 text-sm text-gray-300">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-pixel-accent"></i> Revisi Tanpa
+                Batas (S&K Berlaku)
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-pixel-accent"></i> Pencarian
+                Jurnal Referensi Terkini
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-pixel-accent"></i> Parafrase
+                Bebas Plagiasi
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-pixel-card rounded-3xl p-8 border border-white/5 hover:border-pixel-secondary/50 transition"
+          >
+            <h3 class="text-2xl font-bold mb-4">Pengolahan Data</h3>
+            <p class="text-gray-400 mb-6 text-sm">
+              Analisis data kuantitatif dan kualitatif secara akurat menggunakan
+              software standar penelitian.
+            </p>
+            <ul class="space-y-3 mb-8 text-sm text-gray-300">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-pixel-secondary"></i> SPSS,
+                SmartPLS, AMOS
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-pixel-secondary"></i> Uji
+                Validitas & Reliabilitas
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-pixel-secondary"></i>
+                Interpretasi Hasil Lengkap
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER / CTA -->
+    <footer
+      id="kontak"
+      class="bg-pixel-card border-t border-white/5 pt-16 pb-8 relative overflow-hidden"
+    >
+      <div
+        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-pixel-primary rounded-full mix-blend-screen filter blur-[150px] opacity-10"
+      ></div>
+
+      <div class="container mx-auto px-6 relative z-10">
+        <div
+          class="bg-pixel-dark rounded-3xl p-8 lg:p-12 border border-white/10 flex flex-col md:flex-row items-center justify-between mb-16 gap-8"
+        >
+          <div>
+            <h2 class="font-display text-3xl font-bold mb-2">
+              Mulai Konsultasi Judul Sekarang.
+            </h2>
+            <p class="text-gray-400">
+              Tim Pixelar't siap membedah masalah penelitianmu. Gratis 100%
+              untuk sesi pertama.
+            </p>
+          </div>
+          <a
+            href="https://wa.me/6285382460264?text=Halo%20Admin%20Pixelart%2C%20saya%20ingin%20konsultasi%20judul%20skripsi%20saya."
+            class="shrink-0 bg-green-500 text-pixel-dark px-8 py-4 rounded-full font-bold hover:bg-green-400 transition flex items-center gap-2 text-lg"
+          >
+            <i class="fa-brands fa-whatsapp text-2xl"></i> Chat Admin Pixelar't
+          </a>
+        </div>
+
+        <div
+          class="grid md:grid-cols-3 gap-8 mb-8 border-b border-white/10 pb-8"
+        >
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <div
+                class="w-8 h-8 rounded-lg bg-gradient-to-br from-pixel-primary to-pixel-secondary flex items-center justify-center text-white font-bold text-sm"
+              >
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <span class="font-display font-bold text-xl tracking-tight"
+                >Pixelar<span class="text-pixel-primary">'t</span></span
+              >
+            </div>
+            <p class="text-gray-500 text-sm">
+              Solusi cerdas penyelesaian tugas akhir, skripsi, dan pengembangan
+              aplikasi untuk mahasiswa era digital.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Layanan Cepat</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href="https://wa.me/6285382460264?text=Halo%20Admin%20Pixelart%2C%20saya%20ingin%20konsultasi%20judul%20skripsi%20saya." class="hover:text-pixel-primary transition"
+                  >Web Development (Skripsi)</a
+                >
+              </li>
+              <li>
+                <a href="https://wa.me/6285382460264?text=Halo%20Admin%20Pixelart%2C%20saya%20ingin%20konsultasi%20judul%20skripsi%20saya." class="hover:text-pixel-primary transition"
+                  >Bimbingan Tesis & Skripsi</a
+                >
+              </li>
+              <li>
+                <a href="https://wa.me/6285382460264?text=Halo%20Admin%20Pixelart%2C%20saya%20ingin%20konsultasi%20judul%20skripsi%20saya." class="hover:text-pixel-primary transition"
+                  >Olah Data Statistik</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Hubungi Kami</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <i class="fa-brands fa-instagram mr-2"></i> @yusuf_hisyam06
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope mr-2"></i> hisyamyusuf885@gmail.com
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot mr-2"></i> Workspace Tj. Tanah, Kec. Danau Kerinci, Kabupaten Kerinci, Jambi 37172
+                Indonesia
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center text-gray-600 text-sm">
+          &copy; 2026 Pixelar't Studio. Didesain dengan presisi dan performa
+          tinggi.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
